@@ -1,0 +1,803 @@
+body{
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-left: 0px;
+    margin-bottom: 0px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+
+
+    
+   
+}
+
+/* applying single font to all */
+
+/*header k lie animation lagaya hu glowing text*/
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+
+/*header ka text h2 size ka rkha tha to vai h bs*/
+
+h2{
+	height: 10vh;
+	margin-bottom: 0;
+/* 	text-align: center; */
+
+margin-left: 30%;
+	font-weight: bold;
+	font-family: 'M PLUS Rounded 1c', sans-serif;
+	font-size: 3vw;
+	color: #fff;
+	animation: glow 1s ease-in-out infinite alternate;
+      /*text-shadow:
+      0 0 2px #fff,
+      0 0 3px #fff,
+      0 0 10px #fff,
+      0 0 20px #f09,
+      0 0 50px #f09,
+      0 0 45px #f09,
+      0 0 50px #f09,
+      0 0 90px #f09;*/
+}
+
+
+/*footter k lie hai ye neeche wala css*/
+
+footer{
+	position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 10vh;
+  background-color: rgba(0, 0, 0, 0);
+}
+/*footer text*/
+h3,span{
+  
+	text-align: center;
+	font-weight: bold;
+	font-family: 'M PLUS Rounded 1c', sans-serif;
+	font-size: 0.88vw;
+	color: #fff;
+
+
+}
+
+#adimis{
+/*	    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;*/
+      color: #30A2FF;
+}
+
+
+
+body , #cover1 , #cover2 , #cover3  {
+	background: rgb(15,32,39);
+background: linear-gradient(90deg, rgba(15,32,39,1) 0%, rgba(32,58,67,1) 49%, rgba(44,83,100,1) 100%);
+}
+
+
+#cover0, #coverEMH{
+    
+	visibility: visible;                                           
+/*here i learned ki kaise vh wh use krke pura cover krke ek div bna skte h	*/
+	
+	width: 100vw;
+    height: 100vh;
+    position: fixed;
+    
+    
+}
+
+#cover1{
+    
+	visibility: visible;                                           
+/*here i learned ki kaise vh wh use krke pura cover krke ek div bna skte h	*/
+	
+	width: 100vw;
+    height: 100vh;
+    position: fixed;
+    
+    
+}
+
+.hidden{
+	/*opacity me kya hota h ki element present hota h bs dikhta nhi h islie yha pr pointer-events ka use krna pda vo kyakrra hai pointer ka action on div b ko disable krra hai qki vo upr h to ye zroori h isko krne s us upr wali div ka action khtm hojayega  */
+
+	  pointer-events: none;
+      opacity: 0;
+      transition:  opacity 0.3s linear;
+}
+.show{
+	 
+	 pointer-events: auto;
+     opacity: 1;
+     transition:  opacity 0.3s linear;
+    
+}
+
+#cover2{
+  
+	                                                          
+/*here i learned ki kaise vh wh use krke pura cover krke ek div bna skte h	*/
+	
+	width: 100vw;
+    height: 100vh;
+    position: fixed;   
+    
+}
+
+#cover3{
+	                                                   
+/*here i learned ki kaise vh wh use krke pura cover krke ek div bna skte h	*/
+	
+	width: 100vw;
+    height: 100vh;
+    position: fixed;
+   
+}
+
+
+
+#ttt{
+	position: relative;
+	top: 6%;
+	font-family: 'M PLUS Rounded 1c', sans-serif;
+	font-size: 2vw;
+	color: whitesmoke;
+	text-align: center;
+
+}
+hr{
+	position: relative;
+	top: 6%;
+}
+
+#sel_player_text{
+	position: relative;
+	top: 3%;
+	margin-top: 0;
+	margin-bottom: 0;
+	font-family: 'M PLUS Rounded 1c', sans-serif;
+	color: whitesmoke;
+	text-align: center;
+	font-size: 2.1vw;
+
+}
+
+.option {
+	position: relative;
+	top: 12%;
+	display: flex;
+	width: 100%;
+	height: 70%;
+	gap: 7%;
+	display: grid;
+
+	 grid-template-columns: 1.5fr 1fr 1fr 1.5fr; 
+    grid-gap: 20px; 
+}
+
+#botplay{
+	 box-shadow: 0 4px 8px 0 rgba(0,0,0,0.9);
+  transition: 0.3s;
+  border-radius: 5px;
+ margin-left: 10;
+ grid-column-start: 2;
+
+} 
+
+
+
+#friendsplay {
+	 box-shadow: 0 4px 8px 0 rgba(0,0,0,0.9);
+  transition: 0.3s;
+  border-radius: 5px;
+
+
+}
+
+#playerx{
+
+
+	margin-left: 5%;
+	 
+	
+	border-radius: 10px;
+	color: #826F66;
+	font-weight: bold;
+	font-family: 'M PLUS Rounded 1c', sans-serif;
+	background-color: #F0F0F0;
+
+/*  ye teen neeche ki  property is used to centre "player (x)" text  */
+     
+     align-items: center;                                
+     justify-content: center;
+
+     cursor: pointer;
+
+
+
+}
+
+#playero{
+	 margin-right: 5%;
+	
+	border-radius: 10px;
+	color: #826F66;
+	font-weight: bold;
+	font-family: 'M PLUS Rounded 1c', sans-serif;
+	background-color: #F0F0F0;
+	
+	
+     align-items: center;                                
+     justify-content: center;
+
+
+     cursor: pointer;
+
+
+}
+
+
+#playero:hover ,#playerx:hover ,#botplay:hover ,#friendsplay:hover {
+/*here i learned ki kasie transition use krte hai ALSO SEE w3schools or crazy crazy transformation dia hua h*/
+	transform: scale(0.9);
+	transition: all 0.3s ease;
+	box-shadow: 0 0 11px rgba(33,33,33,.2);
+}
+
+/*------------------------chess board-------------------------------------------*/
+
+#showturn{
+	position: absolute;
+     left: 50%;
+     top: 12%;
+    transform: translate(-50%,-50%);
+
+
+    width: 24vw;
+    height: 5vh;
+    
+    border-radius: 10px;
+	border-style: solid;
+  border-width: 5px;
+  border-color: #191919;
+	background-color: black;
+
+	display: table;
+
+	transition:  all 0.3s ease;
+
+	
+
+}
+
+#turnshift_X{
+	float: left;
+     width:  10vw;
+    height: 8vh;
+    
+    border-radius: 10px;
+	border-style: solid;
+  border-width: 5px;
+  border-color: black;
+
+	 margin-top: 1%;
+	 margin-left: 1%;
+
+	 color: whitesmoke;
+	 font-size: 2.0vw;
+	font-weight: bold;
+	font-family: 'M PLUS Rounded 1c', sans-serif;
+
+	display: flex;
+     align-items: center;                                
+     justify-content: center;
+
+     transition: all 0.2s linear;
+}
+
+.turn{
+	background-color: #116D6E;
+
+
+	
+
+
+
+}
+
+#turnshift_O{
+	float: right;
+	width: 10vw;
+    height: 8vh;
+   
+    border-radius: 10px;
+	border-style: solid;
+  border-width: 5px;
+  border-color: black;
+/*	background-color: #3D8361;*/
+
+	 margin-top: 1%;
+	 margin-right: 1%;
+
+	 color: whitesmoke;
+	 font-size: 2.0vw;
+	font-weight: bold;
+	font-family: 'M PLUS Rounded 1c', sans-serif;
+
+	display: flex;
+     align-items: center;                                
+     justify-content: center;
+
+     transition: all 0.2s ease;
+}
+
+
+
+#playboard{
+
+	position: absolute;
+   left: 50%;
+     top: 42%;
+    transform: translate(-50%,-50%);
+
+
+    width: 19vw;
+    height: 19vw;
+    
+/*   yha ye pta chla ki rgba 0 0 0 0 me transparent colour chadh jata hai chizo pe */
+    border-radius: 5px;
+    background-color: rgba(0,0,0,0);
+	
+    
+    display: grid;
+    grid-template-columns: repeat(3, 33.33%);
+    grid-auto-rows: 33.33%;
+    grid-gap: 0.4rem;
+}
+.box{
+	background-color: #000000;
+	border-radius: 15px;
+	/*border-style: solid;
+  border-width: 5px;*/
+  border-color: rgba(0,0,0,0);
+/*border: 0px solid;*/
+
+border: 1px solid #00e1ff;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.8);
+
+box-shadow:  0 0 7px #fff,
+      0 0 1.0px #fff,
+      0 0 2.1px #fff,
+      0 0 4.2px #5271ff,
+      0 0 8.2px #5271ff,
+      0 0 9.2px #5271ff,
+      0 0 10.2px #5271ff,
+      0 0 151px #5271ff;
+
+	
+
+}
+
+.hoveronbox:hover{
+	transform: scale(0.90);
+	transition: all 0.3s ease;
+
+
+
+}
+
+.circle_on_box{
+
+/*	background-color: #3D8361;*/
+    
+   
+	 color: whitesmoke;
+	 
+	 margin-top: 2%;
+	 font-size: 5.5vw;
+	font-weight: bold;
+	font-family: 'M PLUS Rounded 1c', sans-serif;
+
+	text-align: center;
+
+	text-shadow:  0 0 7px #fff,
+      0 0 1.0px #fff,
+      0 0 2.1px #fff,
+      0 0 4.2px #5271ff,
+      0 0 8.2px #5271ff,
+      0 0 9.2px #5271ff,
+      0 0 10.2px #5271ff,
+      0 0 15.1px #5271ff;
+
+
+
+
+
+}
+
+.cross_on_box{
+
+/*	background-color: #3D8361;*/
+    
+   
+	 color: white;
+	 margin-top: 2%;
+	 font-size: 5.5vw;
+	font-weight: bold;
+	font-family: 'M PLUS Rounded 1c', sans-serif;
+
+	text-align: center;
+
+	text-shadow:  0 0 7px #fff,
+      0 0 1.0px #fff,
+      0 0 2.1px #fff,
+      0 0 4.2px #5271ff,
+      0 0 8.2px #5271ff,
+      0 0 9.2px #5271ff,
+      0 0 10.2px #5271ff,
+      0 0 15.1px #5271ff;
+
+}
+
+
+    
+	 
+
+
+
+/*<!-- ------------------- resultbox section ------------------------->*/
+  
+
+#result_box{
+	
+ 
+/* here i lEARNEND  ki kaise koi div ko centre la sskte hai by using transform left top and postion	*/
+	border-radius: 5px;
+	background-color: rgba(0,0,0,0);
+	width: 40vw;
+    height: 40vh;
+     position: absolute;
+     left: 50%;
+     top: 25%;
+    transform: translate(-50%,-50%);
+
+
+}
+
+#player_X_won_text{
+    display: flex;
+    
+	font-family: 'M PLUS Rounded 1c', sans-serif;
+	color: whitesmoke;
+	text-align: center;
+	font-size: 2.1vw;
+
+	height: 20%;
+
+}
+#result_text{
+width: 100%;
+
+}
+
+#mainmenu {
+	position: absolute;
+	left: 55%;
+	bottom: 30%;
+
+	
+	border-radius: 10px;
+	color: whitesmoke;
+	font-weight: bold;
+	font-family: 'M PLUS Rounded 1c', sans-serif;
+	background-color: #000000;
+	
+	
+	width: 15vw;
+    height: 10vh;
+
+
+    display: flex;
+     align-items: center;                                
+     justify-content: center;
+
+
+     cursor: pointer;
+
+}
+
+ #replay{
+	position: absolute;
+	left: 10%;
+	bottom: 30%;
+
+	
+	border-radius: 10px;
+	color: whitesmoke;
+	font-weight: bold;
+	font-family: 'M PLUS Rounded 1c', sans-serif;
+	background-color: #000000;
+	
+	
+	width: 15vw;
+    height: 10vh;
+
+
+    display: flex;
+     align-items: center;                                
+     justify-content: center;
+
+
+     cursor: pointer;
+
+}
+
+#mainmenu:hover {
+/*here i learned ki kasie transition use krte hai ALSO SEE w3schools or crazy crazy transformation dia hua h*/
+	transform: scale(0.9);
+	transition: all 0.3s ease;
+}
+#replay:hover {
+/*here i learned ki kasie transition use krte hai ALSO SEE w3schools or crazy crazy transformation dia hua h*/
+	transform: scale(0.9);
+	transition: all 0.3s ease;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+//--------------------------------------------------------------------------------------------------------------------------------
+
+
+//--------------------------yha  se new edits hai sb  , advance tick tack toe ki trf -----------------------------------------
+*/
+
+
+
+
+#win_result{
+	display: grid;
+	color: whitesmoke;
+}
+
+#front_box{
+	height: 80%;
+}
+
+
+
+
+
+
+
+
+#botplay, #friendsplay{
+
+	
+justify-content: center;
+
+overflow: hidden;
+position: relative;
+cursor: pointer;
+
+}
+
+
+
+
+
+img{
+
+  object-position: 100% 100%;
+	height: 100%;
+   width:100%;
+/*    object-fit: cover; */
+   
+   
+}
+.card{
+	width: 100%;
+	height: 100%;
+	top: 100%;
+	right: 0;
+	position: absolute;
+	background: #1f3d4738;
+	color: whitesmoke;
+	text-align: center;
+	font-size: 2vw;
+	overflow: hidden;
+	
+
+}
+
+
+
+
+/* what this below is doing ki jaise hi hover krre hai botplay wale par to card wale pe  ye property apply hojari hai its cool apn ko card wale ko hover krna ni ppdra */
+
+#botplay:hover  .card {
+  
+  top: 11%;
+  backdrop-filter :  blur(5px);
+	transition: all 0.3s ease;
+	
+}
+
+#friendsplay:hover .card {
+  
+  top: 11%;
+  backdrop-filter :  blur(5px);
+	transition: all 0.3s ease;
+	
+}
+
+
+
+
+
+.option_toughness {
+	position: relative;
+	top: 12%;
+	display: flex;
+	width: 100%;
+	height: 70%;
+	gap: 7%;
+	display: grid;
+
+	 grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
+    grid-gap: 20px; 
+}
+
+#esybtn, #mediumbtn ,#hardbtn{
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.9);
+  transition: 0.3s;
+  border-radius: 5px;
+
+
+  justify-content: center;
+
+overflow: hidden;
+position: relative;
+cursor: pointer;
+}
+
+#esybtn{
+	 
+ margin-left: 10;
+ grid-column-start: 2;
+
+}
+
+
+
+#esybtn:hover ,#mediumbtn:hover ,#hardbtn:hover  {
+/*here i learned ki kasie transition use krte hai ALSO SEE w3schools or crazy crazy transformation dia hua h*/
+	transform: scale(0.9);
+	transition: all 0.3s ease;
+	box-shadow: 0 0 11px rgba(33,33,33,.2);
+}
+
+#esybtn:hover  .card {
+  
+  top: 11%;
+  backdrop-filter :  blur(5px);
+	transition: all 0.3s ease;
+	
+}
+
+#mediumbtn:hover  .card {
+  
+  top: 11%;
+  backdrop-filter :  blur(5px);
+	transition: all 0.3s ease;
+	
+}
+
+#hardbtn:hover  .card {
+  
+  top: 11%;
+  backdrop-filter :  blur(5px);
+	transition: all 0.3s ease;
+	
+}
+
+
+h1{
+	font-size: 2.5vw;
+}
+.hess{
+	font-size: 1.5vw;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+/----------------------------------------
+
+
+
+.option_X_or_y{
+	position: relative;
+	top: 12%;
+	display: flex;
+	width: 100%;
+	height: 20%;
+	gap: 7%;
+}
+
+
+#playerx ,#playero{
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.9);
+  transition: 0.3s;
+  border-radius: 5px;
+
+
+  justify-content: center;
+
+overflow: hidden;
+position: relative;
+cursor: pointer;
+}
+
+ 
+
+ #playerx{
+	margin-left: 10;
+ grid-column-start: 2;
+}
+
+#playerx:hover ,#playero:hover   {
+/*here i learned ki kasie transition use krte hai ALSO SEE w3schools or crazy crazy transformation dia hua h*/
+	transform: scale(0.9);
+	transition: all 0.3s ease;
+	box-shadow: 0 0 11px rgba(33,33,33,.2);
+}
+
+
+#playerx:hover  .card {
+  
+  top: 15%;
+  backdrop-filter :  blur(5px);
+	transition: all 0.3s ease;
+	
+}
+
+
+#playero:hover  .card {
+  
+  top: 15%;
+  backdrop-filter :  blur(5px);
+	transition: all 0.3s ease;
+	
+}
+
+#win_result{
+	display: grid;
+	color: Cyan;
+	margin-top: 12%;
+	margin-left: 10%;
+	font-size: 2vw;
+
+	
+}

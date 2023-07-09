@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="main.css">
+</head>
+<body>
+      
+      <header> <h2>Advanced Bot Tic Tack Toe</h2> </header>
+
+      <!-- ------------------------------- front box section -------------------------------------->
+                                                                                                            
+                                                                        
+      <div  id="cover0">
+          <div id="front_box">
+                <p id="sel_player_text">select your opponent ... ! </p>
+            <div class="option">
+                  <div id="botplay" onclick="bot_play()">
+                        <img src="images/9f8b1428028b681cd270bd7f27e8cd42.jpg">
+                        <div class="card"><h1 id="curvetext">
+                              <h1 class="he">Play against Bot</h1>
+                        </h1></div>
+                  </div>
+
+                  <div id="friendsplay" onclick="friends_play()">
+                        <img src="images/c96a06743e57910a828e8a640c780cdb.jpg">
+                        <div class="card"><h1 id="curvetext">
+                              <h1 class="he">Play with a Friend</h1>
+                        </h1></div>
+
+                  </div>
+
+            </div>
+                
+          </div>
+     </div>
+
+
+     <!-- ------------------------------- esy medium hard box (EMH box) section -------------------------------------->
+                                                                                                            
+                                                                        
+      <div class="hidden" id="coverEMH">
+          <div id="front_box">
+                <p id="sel_player_text">select toughness of game ... ! </p>
+            <div class="option_toughness">
+
+                  <div id="esybtn" onclick="easybtn()">
+                        <img src="images/7153552263eff047663d0ba2a867b872.jpg">
+                        <div class="card">
+                              <h1 class="he">EASY</h1>
+                              <p class="hess">The Bot here is little noob so this one is for beignners ..!</p>
+                        </div>
+                  </div>
+
+                  <div id="mediumbtn" onclick="mediumbtn()">
+                        <img src="images/7dbf070b98f375e7f98e05e4806cf379.jpg">
+                        <div class="card">
+                              <h1 class="he">MEDIUM</h1>
+                              <p class="hess">Be prudent in your moves as our this Bot is smart so it wont be easy for u to win ..!</p>
+                        </div>
+                  </div>
+
+                  <div id="hardbtn" onclick="hardbtn()">
+                        <img src="images/hard.jpg">
+                        <div class="card">
+                              <h1 class="he">HARD</h1>
+                              <p class="hess">It's Impossible to beat our Blue-eyed Bot he's hyperintelligent try not to loose against him ..! </p>
+                        </div>
+                  </div>
+
+
+            </div>
+                
+          </div>
+     </div>
+
+
+
+      <!-- ------------------------------- centre box section ------------------------------------ -->
+	<div class="hidden" id="cover1">
+ 	    <div id="front_box">
+ 	    	    <p id="sel_player_text">select which you want to be ? </p>
+            <div class="option">
+
+
+            	<div id="playerx" onclick="X_button()">
+                     <img src="images/5df5610c670cc24c66a207a80ce6bd6f.jpg">
+                        <div class="card"><h1 id="curvetext">
+                              <h1 class="he">Player (X)</h1>
+                        </h1></div>     
+                  </div>
+
+
+ 	    	      <div id="playero" onclick="O_button()">
+                   <img src="images/25b236acda08f45e4810ffafa9f053fb.jpg">
+                        <div class="card"><h1 id="curvetext">
+                              <h1 class="he">Player (O)</h1>
+                        </h1></div>
+                  </div>
+
+            </div>
+ 	    	    
+     </div>
+</div>
+     <!-- -------------------playboard section ------------------------->
+<div class="hidden" id="cover2" >
+      <div id="showturn">
+      	   <div id="turnshift_X"> X's Turn</div>
+      	    <div id="turnshift_O">O's Turn</div>
+      </div>
+      <div class="winshow" id="win_result">
+            <div>
+                  Matches won -
+            </div>
+            
+                   
+            <div>
+                  YOU - 0
+            </div>
+
+
+            <div>
+                  BOT - 0
+            </div>
+      </div>
+      <div id="playboard">
+      	    <div class="box hoveronbox"></div>
+      	    <div class="box hoveronbox"></div>
+      	    <div class="box hoveronbox"></div>
+      	    <div class="box hoveronbox"></div>
+      	    <div class="box hoveronbox"></div>
+      	    <div class="box hoveronbox"></div>
+      	    <div class="box hoveronbox"></div>
+      	    <div class="box hoveronbox"></div>
+      	    <div class="box hoveronbox"></div>
+      </div>
+</div>
+
+ <!-- -------------------resultbox section ------------------------->
+<div id="cover3" class="hidden">
+      <div id="result_box">
+            
+ 	    	   <div id="player_X_won_text"> <p id="result_text"> </p> </div>
+
+                <button id="replay"> Replay </button>
+ 	    	    <button id="mainmenu"> Main Menu </button>
+ 	    	    
+
+     </div>
+</div>
+      <!-- ----------------- -->
+
+
+      <footer><h3>Designed by <span id="adimis">Aadrash Mishra </span>- This project is created using HTML , CSS , JAVASCRIPT </h3></footer>
+
+  
+
+<script src="main.js" ></script>
+  
+</body>
+</html>
